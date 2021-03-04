@@ -1,0 +1,3 @@
+chip:AW88194
+product:(Project)mt6768
+version:k6601-V3-1014

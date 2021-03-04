@@ -1,0 +1,40 @@
+on post-fs-data
+    chmod 0664 /dev/sostorch
+    chown system system /dev/sostorch
+	chown system system /sys/devices/platform/odm/odm:sostorch/level
+	chown system system /sys/devices/platform/odm/odm:sostorch/mode
+	chown system system /sys/devices/platform/odm/odm:sostorch/enable
+	chmod 0664 /dev/hoperf
+    chown system system /dev/hoperf
+	chown system system /sys/devices/platform/11007000.i2c/i2c-0/0-0076/pressure
+#aw22xxx
+	chown system system /sys/class/leds/breath/brightness
+	chown system system /sys/class/leds/breath/fw
+	chown system system /sys/class/leds/breath/imax
+	chown system system /sys/class/leds/breath/rgb
+	chown system system /sys/class/leds/breath/task0
+	chown system system /sys/class/leds/breath/cfg
+	chown system system /sys/class/leds/breath/effect
+	chown system system /sys/class/leds/breath/hwen
+	chown system system /sys/class/leds/breath/max_brightness
+    chown system system /sys/class/leds/breath/reg
+    chown system system /sys/class/leds/breath/task1
+	chmod 0664 /sys/class/leds/breath/brightness
+	chmod 0664 /sys/class/leds/breath/fw
+	chmod 0664 /sys/class/leds/breath/imax
+	chmod 0664 /sys/class/leds/breath/rgb
+	chmod 0664 /sys/class/leds/breath/task0
+	chmod 0664 /sys/class/leds/breath/cfg
+	chmod 0664 /sys/class/leds/breath/effect
+	chmod 0664 /sys/class/leds/breath/hwen
+	chmod 0664 /sys/class/leds/breath/max_brightness
+	chmod 0664 /sys/class/leds/breath/reg
+	chmod 0664 /sys/class/leds/breath/task1
+#flashlight
+	chown system camera /sys/devices/virtual/flashlight_core/flashlight/flashlight_capability
+	chown system camera /sys/devices/virtual/flashlight_core/flashlight/flashlight_strobe
+	chmod 0664 /sys/devices/virtual/flashlight_core/flashlight/flashlight_capability
+	chmod 0664 /sys/devices/virtual/flashlight_core/flashlight/flashlight_strobe
+#fm_ant
+	chown system system /sys/devices/virtual/fm_ant/fm_ant_data/fm_ant_status
+	chmod 0666 /sys/devices/virtual/fm_ant/fm_ant_data/fm_ant_status
